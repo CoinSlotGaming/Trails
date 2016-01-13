@@ -1,0 +1,92 @@
+#Request-delay for the Mojang API (milliseconds)
+apiTimeout: 10000
+nick:
+  tab: true
+  chat: true
+  scoreboard: true
+  name: true
+#Deny usage of already existing names
+disableExisting: true
+#Replace the skins with Steve/Alex while loading the real skins
+loadingSkin: true
+#Enable this, if the server is behind a bungeecord server which is in online mode
+bungeecord: false
+#Enable this, if you only need the API (not the command)
+apiOnly: false
+localStorage:
+  #If enabled, skin data will be stored in a local database
+  enabled: false
+  #Time for skins to be cached (minutes, set to -1 for no maximum)
+  cacheTime: 10080
+#If enabled, skins will be updated to the affected players themselves immediately
+selfUpdate: true
+tabOverwrite:
+  #Overwrite tab-completed names with the nick names
+  enabled: true
+  #Keep the original name of the players
+  keepOriginal: false
+#If names mentioned in chat messages should be replaced with the nickname
+chatReplacement: true
+#If players with the 'nick.autoNick' should get a random nickname when joining
+autoNick: false
+randomNames:
+- 'Cotton Mather'
+- 'Deodat Lawson'
+- 'Edward Bishop'
+- 'Giles Corey'
+- 'James Bayley'
+- 'James Russel'
+- 'John Hathorne'
+- 'John Proctor'
+- 'John Willard'
+- 'Jonathan Corwin'
+- 'Samuel Parris'
+- 'Samuel Sewall'
+- 'Thomas Danforth'
+- 'William Hobbs'
+- 'William Phips'
+- 'Abigail Hobbs'
+- 'Alice Parker'
+- 'Alice Young'
+- 'Ann Hibbins'
+- 'Ann Putnam'
+- 'Ann Sears'
+- 'Betty Paris'
+- 'Lydia Dustin'
+- 'Martha Corey'
+- 'Mary Eastey'
+- 'Mary Johnson'
+- 'Mary Warren'
+- 'Sarah Bishop'
+- 'Sarah Good'
+- 'Sarah Wildes'
+- 'Walker Case'
+- 'Nicholas Hess'
+- 'Katie Pring'
+
+
+randomSkins:
+- 'CoinSlotGaming'
+- 'deadrecon98'
+- 'YukaYuma'
+
+
+message:
+  prefix: '&6[NickNamer]&r '
+  permission:
+    general: '&cNo permission.'
+    name: '&cYou don''t have permission to use that name!'
+    skin: '&cYou don''t have permission to use that skin!'
+    change_other: '&cYou don''t have permission to change other''s nicknames or skins.'
+    cleared: '&aCleared &b%player%''s &askin'
+  name:
+    invalid: '&cInvalid nick name!'
+    length: '&cThat name is too long!'
+    changed: '&aChanged &b%player%''s &aname to &b%name%&a.'
+    taken: '&cThis name is already taken!'
+    cleared: '&aCleared &b%player%''s &aname'
+  skin:
+    changed: '&aChanged &b%player%''s &askin to &b%skin%''s&a skin.'
+    update: '&aIt will be updated in &b%time%&a minute(s).'
+  player:
+    not_online: '&cThat player is not online!'

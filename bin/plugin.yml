@@ -1,0 +1,10 @@
+name: Trails
+author: CoinSlotGaming
+description: Trails!
+main: com.csg.trails.Trails
+version: 1.0.0
+depend: [ParticleLIB]
+commands:
+  trail:
+      descriptiun: Trails!
+      uasge: /<command>
